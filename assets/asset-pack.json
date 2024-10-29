@@ -1,0 +1,48 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/sunnyland/environment/back.png",
+                "type": "image",
+                "key": "back"
+            },
+            {
+                "url": "assets/kenny-button/button_rectangle_depth_gradient.png",
+                "type": "image",
+                "key": "button_rectangle_depth_gradient"
+            },
+            {
+                "url": "assets/kenny-button/button_rectangle_gradient.png",
+                "type": "image",
+                "key": "button_rectangle_gradient"
+            },
+            {
+                "url": "assets/sunnyland/sprites/instructions.png",
+                "type": "image",
+                "key": "instructions"
+            },
+            {
+                "url": "assets/sunnyland/environment/middle.png",
+                "type": "image",
+                "key": "middle"
+            },
+            {
+                "url": "assets/sunnyland/sprites/press-enter-text.png",
+                "type": "image",
+                "key": "press-enter-text"
+            },
+            {
+                "url": "assets/sunnyland/sprites/title-screen.png",
+                "type": "image",
+                "key": "title-screen"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

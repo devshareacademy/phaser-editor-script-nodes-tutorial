@@ -1,0 +1,36 @@
+{
+    "id": "ad5f29ca-a04d-4e79-aa32-60787c87e1b7",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "ButtonExample",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "7649594c-3a29-475d-82f1-88a2b29c2d96",
+            "label": "blueButton",
+            "displayName": "Blue Button",
+            "texture": {
+                "key": "button_rectangle_depth_gradient"
+            },
+            "x": 144,
+            "y": 96,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
