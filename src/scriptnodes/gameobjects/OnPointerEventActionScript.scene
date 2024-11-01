@@ -1,0 +1,54 @@
+{
+    "id": "3ce0f232-b787-47bb-82c3-1a714ef161d2",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "ScriptNode",
+            "id": "61781ff4-9e57-4929-831f-03e2ecd6c3a5",
+            "label": "scriptnode_1"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "inputEvent",
+            "label": "Input Event",
+            "tooltip": "The Phaser Input Event to listen for.",
+            "defValue": "pointerover",
+            "customDefinition": false,
+            "type": {
+                "id": "option",
+                "options": [
+                    "pointerover",
+                    "pointerout"
+                ]
+            }
+        },
+        {
+            "name": "once",
+            "label": "Once",
+            "tooltip": "",
+            "defValue": false,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        }
+    ]
+}

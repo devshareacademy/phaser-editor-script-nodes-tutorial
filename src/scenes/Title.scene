@@ -4,6 +4,7 @@
     "settings": {
         "exportClass": true,
         "autoImport": true,
+        "importFileExtension": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "sceneKey": "Title",
@@ -22,7 +23,18 @@
             "originX": 0,
             "originY": 0,
             "width": 288,
-            "height": 192
+            "height": 192,
+            "list": [
+                {
+                    "prefabId": "78094605-cc50-4db7-8ab6-17180c291bf3",
+                    "id": "e2d1137e-1727-4d3b-917f-c7585f9713fb",
+                    "unlock": [
+                        "x"
+                    ],
+                    "label": "updateTilePositionXActionScript",
+                    "x": 0.3
+                }
+            ]
         },
         {
             "type": "TileSprite",
@@ -36,18 +48,30 @@
             "originX": 0,
             "originY": 0,
             "width": 288,
-            "height": 192
+            "height": 192,
+            "list": [
+                {
+                    "prefabId": "78094605-cc50-4db7-8ab6-17180c291bf3",
+                    "id": "4c6d2bb8-db76-49a7-886b-2649aac8a122",
+                    "unlock": [
+                        "x"
+                    ],
+                    "label": "updateTilePositionXActionScript_1",
+                    "x": 0.6
+                }
+            ]
         },
         {
             "type": "Image",
             "id": "25d22b82-a462-48b6-8e56-7ee55ff35650",
             "label": "titleImage",
             "displayName": "Title",
+            "scope": "METHOD",
             "texture": {
                 "key": "title-screen"
             },
             "x": 144,
-            "y": 70
+            "y": -32
         },
         {
             "type": "Image",
@@ -58,7 +82,8 @@
                 "key": "press-enter-text"
             },
             "x": 144,
-            "y": 157
+            "y": 157,
+            "visible": false
         },
         {
             "type": "Image",
@@ -71,6 +96,129 @@
             "x": 144,
             "originY": 0,
             "visible": false
+        },
+        {
+            "prefabId": "7bf8a19d-1211-4b59-bb38-b034085b171f",
+            "id": "f8b24445-65dc-430f-8acb-500394c2233b",
+            "label": "onAwakeActionScript",
+            "list": [
+                {
+                    "prefabId": "26d6c86f-1f9a-4dc9-9d2e-f64a7fbbbb28",
+                    "id": "a2345e21-5fea-4e95-b589-2018e5784f11",
+                    "label": "fadeEffectCameraActionScript",
+                    "list": [
+                        {
+                            "prefabId": "cc6951d9-c0f8-43f8-afdc-643af5887ebc",
+                            "id": "4dd05801-bffe-4987-ae88-c569f1df4ddd",
+                            "unlock": [
+                                "message"
+                            ],
+                            "label": "logMessageActionScript",
+                            "message": "fade complete"
+                        },
+                        {
+                            "prefabId": "ce9951f2-53b1-493a-9ee4-c7a74de414a4",
+                            "id": "cb8e1a65-d26c-4585-85df-39837e408c52",
+                            "unlock": [
+                                "targetGameObject",
+                                "x",
+                                "y",
+                                "duration"
+                            ],
+                            "label": "moveToActionScript",
+                            "targetGameObject": "titleImage",
+                            "x": 144,
+                            "y": 70,
+                            "duration": 700,
+                            "list": [
+                                {
+                                    "prefabId": "99f4000f-ac64-43d3-8ae6-88a91694e983",
+                                    "id": "a114bd47-8161-4c23-a173-ee3a307332ea",
+                                    "unlock": [
+                                        "targetGameObject"
+                                    ],
+                                    "label": "setVisibleActionScript",
+                                    "targetGameObject": "pressEnterImage",
+                                    "list": [
+                                        {
+                                            "prefabId": "34cde368-8bd4-4596-97fc-47c6825699b1",
+                                            "id": "7729c9a1-5d3e-43f6-b55d-23022bc85215",
+                                            "label": "timeEventActionScript",
+                                            "scope": "METHOD",
+                                            "list": [
+                                                {
+                                                    "prefabId": "031f6908-e1e4-4c40-a3e0-639eee29da2c",
+                                                    "id": "657afcef-fbe6-4124-b47b-d882ac91e6de",
+                                                    "unlock": [
+                                                        "targetGameObject"
+                                                    ],
+                                                    "label": "blinkActionScript",
+                                                    "targetGameObject": "pressEnterImage"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "e8e75fbe-17a0-49df-ae3c-964d0ecbf8f9",
+                    "id": "b3af4287-2f10-42b7-930a-da0ab5de297b",
+                    "unlock": [
+                        "targetGameObject",
+                        "once"
+                    ],
+                    "label": "onPointerDownActionScript",
+                    "targetGameObject": "backgroundTileSprite",
+                    "once": true,
+                    "list": [
+                        {
+                            "prefabId": "99f4000f-ac64-43d3-8ae6-88a91694e983",
+                            "id": "a25b2992-d733-43aa-8d71-4f2ae8789dfc",
+                            "unlock": [
+                                "targetGameObject",
+                                "visible"
+                            ],
+                            "label": "setVisibleActionScript_1",
+                            "targetGameObject": "titleImage",
+                            "visible": false
+                        },
+                        {
+                            "prefabId": "99f4000f-ac64-43d3-8ae6-88a91694e983",
+                            "id": "b060def8-3a42-49e7-b81f-b61fc1b89b48",
+                            "unlock": [
+                                "targetGameObject"
+                            ],
+                            "label": "setVisibleActionScript_2",
+                            "targetGameObject": "instructionsImage"
+                        },
+                        {
+                            "prefabId": "e8e75fbe-17a0-49df-ae3c-964d0ecbf8f9",
+                            "id": "c8ed93a9-6ba4-422a-a122-174807069d54",
+                            "unlock": [
+                                "targetGameObject",
+                                "once"
+                            ],
+                            "label": "onPointerDownActionScript_1",
+                            "targetGameObject": "backgroundTileSprite",
+                            "once": true,
+                            "list": [
+                                {
+                                    "prefabId": "26d6c86f-1f9a-4dc9-9d2e-f64a7fbbbb28",
+                                    "id": "e6ce7c77-7e6b-4d22-afa9-f7afe207a642",
+                                    "unlock": [
+                                        "fadeEvent"
+                                    ],
+                                    "label": "fadeEffectCameraActionScript_1",
+                                    "fadeEvent": "camerafadeoutcomplete"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "plainObjects": [],

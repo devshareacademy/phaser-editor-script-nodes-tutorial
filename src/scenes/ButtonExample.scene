@@ -23,7 +23,86 @@
             "x": 144,
             "y": 96,
             "scaleX": 0.3,
-            "scaleY": 0.3
+            "scaleY": 0.3,
+            "list": [
+                {
+                    "prefabId": "e8e75fbe-17a0-49df-ae3c-964d0ecbf8f9",
+                    "id": "9c867764-faf8-4e82-88fd-f2edc837769c",
+                    "unlock": [
+                        "once"
+                    ],
+                    "label": "onPointerDownActionScript",
+                    "displayName": "On Pointer Down",
+                    "once": true,
+                    "list": [
+                        {
+                            "prefabId": "cc6951d9-c0f8-43f8-afdc-643af5887ebc",
+                            "id": "26dae0ec-4e11-4c51-baf5-ab8d51f43cd6",
+                            "unlock": [
+                                "message"
+                            ],
+                            "label": "logMessageActionScript",
+                            "message": "the button was clicked"
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "3ce0f232-b787-47bb-82c3-1a714ef161d2",
+                    "id": "2c1e9fc2-1408-4f35-80a6-5476e64abdfd",
+                    "label": "onPointerEventActionScript",
+                    "displayName": "On Pointer Over",
+                    "list": [
+                        {
+                            "prefabId": "cc6951d9-c0f8-43f8-afdc-643af5887ebc",
+                            "id": "3ece0946-df9f-4bb2-933c-16bc1816da6f",
+                            "unlock": [
+                                "message"
+                            ],
+                            "label": "logMessageActionScript_1",
+                            "message": "pointerover"
+                        },
+                        {
+                            "prefabId": "63b1887c-fbb2-430f-8fb0-a917c3f3539e",
+                            "id": "5f826743-22a6-474f-8548-66f432a8d12b",
+                            "unlock": [
+                                "textureConfig"
+                            ],
+                            "label": "updateTextureActionScript_1",
+                            "textureConfig": "{\"key\":\"button_rectangle_gradient\"}"
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "3ce0f232-b787-47bb-82c3-1a714ef161d2",
+                    "id": "83f0059f-c061-43ca-97f6-25ae857f882d",
+                    "unlock": [
+                        "inputEvent"
+                    ],
+                    "label": "onPointerEventActionScript_1",
+                    "displayName": "On Pointer Out Event",
+                    "inputEvent": "pointerout",
+                    "list": [
+                        {
+                            "prefabId": "cc6951d9-c0f8-43f8-afdc-643af5887ebc",
+                            "id": "c238c74b-ff92-49a7-bac8-c2198e9f4aec",
+                            "unlock": [
+                                "message"
+                            ],
+                            "label": "logMessageActionScript_2",
+                            "message": "pointerout"
+                        },
+                        {
+                            "prefabId": "63b1887c-fbb2-430f-8fb0-a917c3f3539e",
+                            "id": "84430db8-824e-4760-ae21-7f6c9b7ee0e0",
+                            "unlock": [
+                                "textureConfig"
+                            ],
+                            "label": "updateTextureActionScript",
+                            "textureConfig": "{\"key\":\"button_rectangle_depth_gradient\"}"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "plainObjects": [],
