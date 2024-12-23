@@ -4,8 +4,7 @@ An example Phaser Editor v4 project that recreates the <a href="https://github.c
 
 This project was built as part of the Phaser Editor Script Nodes Tutorial video that is hosted on YouTube here:
 
-Coming soon...
-
+[<img src="https://i.ytimg.com/vi/MI80DpDbwYg/hqdefault.jpg">](https://youtu.be/MI80DpDbwYg "Phaser Editor v4 Script Nodes Crash Course – Modular Game Development")
 
 ## Demo
 
